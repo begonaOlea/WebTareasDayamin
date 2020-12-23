@@ -1,9 +1,13 @@
 
 package com.tarea.web;
 
+import com.tarea.model.DBTarea;
+import com.tarea.model.Estado;
 import com.tarea.model.Usuario;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,14 +26,25 @@ public class ListaTareaServlet extends HttpServlet {
            HttpSession s = req.getSession();
            Usuario usr;
            if (s.getAttribute("usuario") ==null){
-               resp.sendRedirect("form-loging");
+               resp.sendRedirect("form-loging");   // URL del jsp donde quiero 
+           }else{
+               usr= (Usuario)s.getAttribute("usuario");
            }
-            
-//           lista<tareas> listaToDo = servioce.getLista
-            
-    }
+          
+//          List<tarea> listToDo = DBTarea.getListTareaPorUsuarioEstado();  analizar!!!!
+           
+//           List<tarea> listToDo = service.getListaporEstado(Estado.TO_DO);
+//           List<tarea> listInProgress = service.getListaporEstado(Estado.IN_PROGRESS);
+//           List<tarea> listaDone = service.getListaporEstado(Estado.DONE);
+//            
 
-    
+  //          req.setAttribute((listaToDO, ), listToDo);
+  
+  
+    }
+//          RequestDispatcher rd = request.getRequestDispatcher(jspAMostrar);
+//          rd.forward(request, response);
+//    
     
     
     

@@ -27,7 +27,7 @@ public class DBTarea {
         mapTareas.put(9, new Tarea(9, "Modelización, clasificación y predicción de los requerimientos del negocio", Estado.TO_DO));
         mapTareas.put(10, new Tarea(10, "Diseñar y comunicar informes que visualicen las conclusiones para tona de decisiones", Estado.TO_DO));
 
-        usuarios = new HashSet<Usuario>();
+        usuarios = new HashSet<>();
         usuarios.add(new Usuario("aaaaa@gmail.com", "1234", "Ainara", "Artea"));
         usuarios.add(new Usuario("bbbbb@gmail.com", "2345", "Begoña", "Bilbao"));
         usuarios.add(new Usuario("ddddd@gmail.com", "3456", "Aduri", "Deusto"));

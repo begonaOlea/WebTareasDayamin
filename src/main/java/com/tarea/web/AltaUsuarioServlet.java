@@ -58,12 +58,9 @@ public class AltaUsuarioServlet extends HttpServlet {
         }
 
         if (valido) {
-            Usuario usuario = new Usuario(paramEmail, paramPwd, paramNombre, paramApell);
+            Usuario usuario = new Usuario(paramEmail,paramPwd,paramNombre,paramApell);
             try {
                 DBTarea.altaUsuario(usuario);
-                 // add usuario ATRIBUTO DE SESSION
-           //El ususario no manda JsessionId, crea una nueva session
-           //sino devuelve la session existente para el Id
            HttpSession session = request.getSession();
            session.setAttribute("usuario",usuario);    
                 

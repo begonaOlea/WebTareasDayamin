@@ -5,6 +5,7 @@ import java.util.Objects;
 
 
 public class Usuario {
+
     private String email;  
     private String password;
     private String nombre;
@@ -51,11 +52,11 @@ public class Usuario {
 
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 73 * hash + Objects.hashCode(this.email);
-        hash = 73 * hash + Objects.hashCode(this.password);
-        hash = 73 * hash + Objects.hashCode(this.nombre);
-        hash = 73 * hash + Objects.hashCode(this.apellidos);
+        int hash = 7;
+        hash = 71 * hash + Objects.hashCode(this.email);
+        hash = 71 * hash + Objects.hashCode(this.password);
+        hash = 71 * hash + Objects.hashCode(this.nombre);
+        hash = 71 * hash + Objects.hashCode(this.apellidos);
         return hash;
     }
 
@@ -90,6 +91,7 @@ public class Usuario {
     public String toString() {
         return "Usuario{" + "email=" + email + ", password=" + password + ", nombre=" + nombre + ", apellidos=" + apellidos + '}';
     }
-    
-    
+
+
+
 }
