@@ -47,7 +47,7 @@ public class DBTarea {
     public static Collection<Tarea> getTareaEstado( Estado e) {
         Set<Tarea> estado = new HashSet<Tarea>();
         for (Tarea t : mapTareas.values()) {
-            if (!t.getEstado() == e) {
+            if (t.getEstado()==e) {
                 estado.add(t);
             }
         }

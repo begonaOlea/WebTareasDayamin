@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(name = "AltaTareaServlet", urlPatterns = {"/altaTarea"})
+@WebServlet(name = "AltaTareaServlet", urlPatterns = {"/alta-tarea"})
 public class AltaTareaServlet extends HttpServlet {
 
     @Override
