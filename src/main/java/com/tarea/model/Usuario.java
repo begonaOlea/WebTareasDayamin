@@ -4,7 +4,7 @@ package com.tarea.model;
 import java.util.Objects;
 
 
-class Usuario {
+public class Usuario {
     private String email;  
     private String password;
     private String nombre;

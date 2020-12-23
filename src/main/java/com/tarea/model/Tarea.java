@@ -75,5 +75,5 @@ public class Tarea {
     public String toString() {
         return "Tarea{" + "idTarea=" + idTarea + ", descripcion=" + descripcion + ", estado=" + estado + '}';
     }
-    
+
 }
