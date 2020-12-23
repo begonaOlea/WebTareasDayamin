@@ -7,4 +7,7 @@ public class EstadoTareasException extends Exception {
         super(msg);
        
    }
+   
+    
 }
+
