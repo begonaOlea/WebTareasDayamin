@@ -1,5 +1,5 @@
 
-package com.tareas.model;
+package com.tarea.model;
 
 import java.util.Objects;
 

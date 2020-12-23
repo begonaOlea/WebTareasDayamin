@@ -1,14 +1,14 @@
 
-package com.tareas.model;
+package com.tarea.model;
 
 import java.util.Objects;
 
 public class Tarea {
     int idTarea;
     String descripcion;
-    String estado; 
+    Estado estado; 
 
-    public Tarea(int idTarea, String descripcion, String estado) {
+    public Tarea(int idTarea, String descripcion, Estado estado) {
         this.idTarea = idTarea;
         this.descripcion = descripcion;
         this.estado = estado;
@@ -30,11 +30,11 @@ public class Tarea {
         this.descripcion = descripcion;
     }
 
-    public String getEstado() {
+    public Estado getEstado() {
         return estado;
     }
 
-    public void setEstado(String estado) {
+    public void setEstado(Estado estado) {
         this.estado = estado;
     }
 
